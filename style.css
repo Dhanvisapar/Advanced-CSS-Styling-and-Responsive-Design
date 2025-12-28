@@ -1,0 +1,61 @@
+body {
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #7ed56f, #28b485);
+  color: white;
+  padding: 100px 20px;
+}
+
+/* Animation */
+.animate {
+  animation: slideDown 1.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Service Boxes */
+.box {
+  background: #f8f9fa;
+  padding: 30px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Section */
+.contact {
+  background: #e9ecef;
+  padding: 50px;
+}
+
+/* Footer */
+.footer {
+  background: #212529;
+  color: white;
+  padding: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+}
